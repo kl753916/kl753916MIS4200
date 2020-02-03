@@ -16,6 +16,8 @@ namespace kl753916MIS4200.DAL
 
         public DbSet<customer> Customers { get; set; }
         public DbSet<Orders> Orders { get; set; }
+        public DbSet<Products> Products { get; set; }
+        public DbSet <OrderDetail> OrderDetails { get; set; }
 
     }
 }
