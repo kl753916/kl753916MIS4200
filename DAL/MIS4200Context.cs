@@ -20,7 +20,12 @@ namespace kl753916MIS4200.DAL
         public DbSet<Orders> Orders { get; set; }
         public DbSet<Products> Products { get; set; }
         public DbSet <OrderDetail> OrderDetails { get; set; }
-      
+
+        //These are for the SD2
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<CourseDetail> CourseDetails { get; set; }
+
 
         // add this method - it will be used later
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
