@@ -8,8 +8,8 @@ namespace kl753916MIS4200.Models
     public class CourseDetail
     {
         public int courseDetailID { get; set; }
-        public string courseName { get; set; }
-        public DateTime classTime { get; set; }
+        public string grade { get; set; } 
+        
 
         // the next two properties link the courseDetail to the Course
         public int courseID { get; set; }
