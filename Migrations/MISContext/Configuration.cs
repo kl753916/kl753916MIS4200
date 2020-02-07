@@ -12,6 +12,7 @@ namespace kl753916MIS4200.Migrations.MISContext
             AutomaticMigrationsEnabled = true;
             MigrationsDirectory = @"Migrations\MISContext";
             ContextKey = "kl753916MIS4200.DAL.MIS4200Context";
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(kl753916MIS4200.DAL.MIS4200Context context)
