@@ -17,5 +17,7 @@ namespace kl753916MIS4200.Models
             get { return customerLastName + ", " + customerFirstName; }
                 }
 
+        public ICollection<Orders> Orders { get; set; }
+
     }
 }
