@@ -17,6 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.creditHours)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.courseRating)
+        </th>
         <th></th>
     </tr>
 
@@ -27,6 +30,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.creditHours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.courseRating)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.courseID }) |

@@ -10,6 +10,7 @@ namespace kl753916MIS4200.Models
         public int courseID { get; set; }
         public string courseDescription { get; set; }
         public string creditHours { get; set; } 
+        public string courseRating { get; set; }
 
         public ICollection<CourseDetail> CourseDetail { get; set; }
 
