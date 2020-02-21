@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +9,8 @@ namespace kl753916MIS4200.Models
     public class CourseDetail
     {
         public int courseDetailID { get; set; }
+
+        [Display(Name = "Student Grade")]
         public string grade { get; set; } 
         
 

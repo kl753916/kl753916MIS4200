@@ -41,7 +41,8 @@ namespace kl753916MIS4200.Controllers
         public ActionResult Create()
         {
             ViewBag.courseID = new SelectList(db.Courses, "courseID", "courseDescription");
-            ViewBag.studentID = new SelectList(db.Students, "studentID", "firstName");
+            //ViewBag.studentID = new SelectList(db.Students, "studentID", "firstName");
+            ViewBag.studentID = new SelectList(db.Students, "studentID", "fullName");
             return View();
         }
 
