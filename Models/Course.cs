@@ -10,7 +10,7 @@ namespace kl753916MIS4200.Models
     {
         public int courseID { get; set; }
 
-        [Display (Name = "Course Description")]
+        [Display (Name = "Course Description")] 
         [Required(ErrorMessage ="Course Description is Required")]
         [StringLength(20)]
         public string courseDescription { get; set; }

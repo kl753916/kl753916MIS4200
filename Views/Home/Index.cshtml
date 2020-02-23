@@ -5,7 +5,7 @@
 <div class="jumbotron">
     <h2>College of Business</h2>
     <p class="lead">Here is a link to Ohio University's College of Business homepage. It is a great tool to access different pages about the COB.</p>
-    <p><a href="https://business.ohio.edu/" class="btn btn-primary btn-lg">Learn more about the COB &raquo;</a></p>
+    <p><a href="https://business.ohio.edu/" class="btn btn-info btn-lg">Learn more about the COB &raquo;</a></p>
 </div>
 
 <div class="row">
@@ -22,7 +22,7 @@
 
 
     </div>
-    <div class="col-md-5">
+    <div class="col-md-4">
         <h2>Links to my SD2</h2>
         <p>I did a many to many relationship between Students and Courses with Course Details as an inner join</p>
         @Html.ActionLink("Students", "Index", "Students")<br />
@@ -32,9 +32,22 @@
 
 
     </div>
-    <div class="col-md-4">
-        <h2>Ohio Women in Business</h2>
-        <p>If you are looking for a new organization to join, I would recommend Ohio Women in Business, also known as OWIB. I am currently a member and it is a great tool for networking and meeting new people. If you are interested in joining then click the link below to learn more.</p>
-        <p><a class="btn btn-default" href="https://business.ohio.edu/future-students/student-life/student-orgs-and-clubs/">OWIB Student Org. &raquo;</a></p>
+    <div class="col-md-5">
+        <h2>System Development 3</h2>
+        <p><span class="glyphicon glyphicon-star"></span></p>
+        <p> Some of the items that I changed for SD3 are: added this dropdown below, made the cob.ohio.edu button another color using bootstrap, added restrictions for when you make a new course, changed course details to have Full Name, made a table in the students tab, changed the delete pages heading to danger, and a few other things.</p>
+
+        <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+            SD3
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("Students", "Index", "Students")</li>
+            <li>@Html.ActionLink("Courses", "Index", "Courses")</li>
+            <li>@Html.ActionLink("CourseDetails", "Index", "CourseDetails")</li>
+        </ul>
+
+
+
     </div>
 </div>

@@ -4,9 +4,15 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+    <div class="alert alert-danger">
 
-<h3>Are you sure you want to delete this?</h3>
+        <h2>Course Detail Delete</h2>
+
+        <p><span class="glyphicon glyphicon-trash"></span></p>
+
+        <h3>Are you sure you want to delete these detail of this course?</h3>
+
+    </div>
 <div>
     <h4>CourseDetail</h4>
     <hr />
@@ -37,7 +43,8 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">

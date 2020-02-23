@@ -11,6 +11,8 @@ namespace kl753916MIS4200.Models
         public int courseDetailID { get; set; }
 
         [Display(Name = "Student Grade")]
+        [Required(ErrorMessage = "Course Grade is Required")]
+        [StringLength(3)]
         public string grade { get; set; } 
         
 
